@@ -1,0 +1,142 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "Workshop Rebuild DEMO",
+  "desc": "",
+  "culture": "fr-fr",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Reservation"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "TypeDeReservation",
+      "subLists": [
+        {
+          "canonicalForm": "hôtel",
+          "list": [
+            "gîte",
+            "chambre"
+          ]
+        },
+        {
+          "canonicalForm": "vol",
+          "list": [
+            "avion",
+            "place"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Ville",
+      "subLists": [
+        {
+          "canonicalForm": "france",
+          "list": [
+            "paris",
+            "lyon",
+            "lille",
+            "marseille",
+            "bordeaux"
+          ]
+        },
+        {
+          "canonicalForm": "australie",
+          "list": [
+            "sydney",
+            "melbourne",
+            "perth",
+            "birsbane",
+            "adelaïde"
+          ]
+        },
+        {
+          "canonicalForm": "royaume-uni",
+          "list": [
+            "londres",
+            "manchester",
+            "edimbourg",
+            "glasgow",
+            "oxford"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "money",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "il me faut hôtel pour 2 personnes à paris dans le quartier de l’opéra",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "il me faut un vol pour londres au départ de paris demain matin",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "je veux réserver un hôtel pour 4 personnes à paris pour 120€",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "je veux un hôtel pour 3 personnes paris pour 120€",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "planifie moi un vol depuis paris pour aller à melbourne le 15 octobre",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "planifie un vol pour sydney pour le 15 septembre",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "réserve un vol pour new york en partant de paris le mardi 21 octobre",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "trouve moi un hôtel à londres pour 10 jours pour moins de £70",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "trouve moi un vol pour aller à londres jeudi prochain pour moins de 300€",
+      "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "trouve moi une chambre d’hôtel à londres pour 8 jours",
+      "intent": "Reservation",
+      "entities": []
+    }
+  ]
+}
