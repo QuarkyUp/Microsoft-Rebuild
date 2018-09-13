@@ -3,6 +3,11 @@ const builder = require('botbuilder');
 
 module.exports = [
     (session, args, next) => {
+        if (args.intent.score < 0.50) {
+            session.send(`Désolé je n'ai pas compris. Pouvez vous reformuler votre demande ?`);
+            return;
+        }
+
         let typeReservation_arr = builder.EntityRecognizer.findAllEntities(args.intent.entities, 'TypeDeReservation');
         let date_arr = builder.EntityRecognizer.findAllEntities(args.intent.entities, 'builtin.datetimeV2.date');
         let prix_arr = builder.EntityRecognizer.findAllEntities(args.intent.entities, 'builtin.currency');

@@ -35,6 +35,8 @@ const bot = new builder.UniversalBot(connector, session => {
 const recognizer_luis = new builder.LuisRecognizer(process.env.LUIS_MODEL_URL);
 bot.recognizer(recognizer_luis);
 
+const dialog = new builder.IntentDialog({ recognizers: [recognizer_luis] });
+
 // Callback appelée lorsqu'un utilisateur se connecte au chatbot
 bot.on(`conversationUpdate`, property => {
     if (property.membersAdded) {
@@ -49,4 +51,10 @@ bot.on(`conversationUpdate`, property => {
 // Callbacks appelées pour chaque intentions que LUIS reconnaît
 bot.dialog('/reservation', callback_reservation)
     .triggerAction({matches: 'Reservation'});
+
+bot.dialog('/help', (session, args)=>{
+    session.send("Je peux vous aider pour vos réservations hôtel et avion")
+})
+    .triggerAction({matches: 'Help'});
+
 

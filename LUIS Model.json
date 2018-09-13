@@ -1,10 +1,13 @@
 {
   "luis_schema_version": "3.0.0",
   "versionId": "0.1",
-  "name": "Workshop Rebuild DEMO",
+  "name": "Workhop REBUILD",
   "desc": "",
   "culture": "fr-fr",
   "intents": [
+    {
+      "name": "Help"
+    },
     {
       "name": "None"
     },
@@ -29,7 +32,8 @@
           "canonicalForm": "vol",
           "list": [
             "avion",
-            "place"
+            "place",
+            "vol"
           ]
         }
       ],
@@ -89,6 +93,36 @@
   "patterns": [],
   "utterances": [
     {
+      "text": "a quoi tu sers",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "à quoi tu sers",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "aide",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "aide moi",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "aidez-moi",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
       "text": "il me faut hôtel pour 2 personnes à paris dans le quartier de l’opéra",
       "intent": "Reservation",
       "entities": []
@@ -116,6 +150,11 @@
     {
       "text": "planifie un vol pour sydney pour le 15 septembre",
       "intent": "Reservation",
+      "entities": []
+    },
+    {
+      "text": "que sais-tu faire",
+      "intent": "Help",
       "entities": []
     },
     {
