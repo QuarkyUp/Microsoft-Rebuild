@@ -9,7 +9,7 @@ module.exports = [
         let ville_arr = builder.EntityRecognizer.findAllEntities(args.intent.entities, 'Ville');
 
         let res = `Confirmation d'une réservation `;
-        if (typeReservation_arr.length) res += (typeReservation_arr[0].entity == 'avion' ? `d'avion  ` : `d'un hôtel `);
+        if (typeReservation_arr.length) res += (typeReservation_arr[0].resolution.values[0] == 'vol' ? `d'avion  ` : `d'un hôtel `);
         if (ville_arr.length == 2) {
             let startDestination = ville_arr.reduce((l, e) => {return e.endIndex < l.endIndex ? e : l;});
             let endDestination = ville_arr.reduce((l, e) => {return e.endIndex > l.endIndex ? e : l;});
@@ -20,7 +20,11 @@ module.exports = [
             session.dialogData.destination = [ville_arr[0].entity];            
             res += `à ${ville_arr[0].entity} `;
         }
-        if (date_arr.length) res += `le ${date_arr[0].resolution.values[0].value} `;
+        if (date_arr.length){
+            if (!/^\d+$/.test(date_arr[0].entity)) {
+                res += `le ${date_arr[0].resolution.values[0].value} `;
+            }
+        }
         if (prix_arr.length) res += `pour ${prix_arr[0].resolution.value} ${prix_arr[0].resolution.unit}`;
         
         builder.Prompts.choice(session, res, [`Oui`, `Non`], { listStyle: 3 });
