@@ -11,7 +11,7 @@ Cette session présente:
 
 Les sources du projet sont accessibles sur https://github.com/VincentGuigui/Chatbot-Best-Practices-with-Luis-and-Bot-Builder
 
-Session présentée à la conférence Rebuild 2018 Nantes par [Thomas Le Flohic](https://github.com/QuarkyUp) et Vincent Guigui
+Session présentée à la conférence Rebuild 2018 Nantes par [Thomas Le Flohic](https://github.com/QuarkyUp) et [Vincent Guigui](https://github.com/VincentGuigui)
 
 A savoir: OCTO organise une formation pratique de 2 jours sur la création de Chatbot
 plus d'informations ici: https://www.octo.academy/fr/formation/188-chatbot-creer-son-agent-conversationnel
