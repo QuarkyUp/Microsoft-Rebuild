@@ -18,8 +18,8 @@ plus d'informations ici: https://www.octo.academy/fr/formation/188-chatbot-creer
 
 ---
 ## Slides de la session
-* [Sur Slideshare](https://www.slideshare.net/gcrao78/rebuild-2018-bonnes-pratiques-pour-crer-son-premier-chatbot-avec-microsoft-luis-et-bot-builder-114960193)
-* [Sur Github](https://github.com/VincentGuigui/Chatbot-Best-Practices-with-Luis-and-Bot-Builder/blob/master/2018-09%20Bonnes%20Pratiques%20de%20developpement%20Chatbot%20Luis%20Bot%20Builder.pptx)
+* [Sur Slideshare](https://www.slideshare.net/quarkyup/microsoft-rebuild-nantes-2018-diffrences-entre-un-bon-et-un-mauvais-chatbot)
+* [Sur Github](https://github.com/QuarkyUp/Microsoft-Rebuild/blob/master/2018-09%20Bonnes%20Pratiques%20de%20developpement%20Chatbot%20Luis%20Bot%20Builder.pptx)
 
 ## Pour démarrer
 ### Installation des dépendances :
